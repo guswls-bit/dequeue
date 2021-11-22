@@ -44,7 +44,7 @@ void init(stack* st) {
 }
 
 void StackPush(stack* st,int value) {
-	if (st->Point <= st->max) {
+	if (st->Point < st->max-1) {
 		st->data[++st->Point] = value;
 	}
 	else {
